@@ -1,74 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página de apresentação de Cris Laine">
-    <title>Cris Laine - QA & Tecnologia</title>
+    <title>Code Tech Labs</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Olá, eu sou Cris Laine</h1>
-            <p>Profissional de QA apaixonada por tecnologia e inovação</p>
-            <a href="#contact" class="cta-button">Entre em contato</a>
+        <div class="container">
+            <h1>Code Tech Labs</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main>
-        <!-- Seção Sobre -->
-        <section id="about">
-            <h2>Sobre mim</h2>
-            <p>Sou uma profissional de Qualidade de Software com experiência em diversas áreas, incluindo automação de testes, criação de cenários BDD, e desenvolvimento de XPaths personalizados. Apaixonada por novos desafios e sempre buscando aprender mais!</p>
-        </section>
+    <section class="hero">
+        <h2>Soluções Tecnológicas de Qualidade</h2>
+        <p>Especialistas em Landing Pages, Aplicativos Mobile e QA.</p>
+        <a href="#services" class="cta-btn">Saiba Mais</a>
+    </section>
 
-        <!-- Seção Habilidades -->
-        <section id="skills">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Automação de Testes</li>
-                <li>Testes Manuais</li>
-                <li>Criação de Cenários BDD</li>
-                <li>Gestão de Projetos QA</li>
-                <li>Java, Selenium, XPaths</li>
-            </ul>
-        </section>
-
-        <!-- Seção Projetos -->
-        <section id="projects">
-            <h2>Projetos Recentes</h2>
-            <div class="project">
-                <h3>Portal de Vagas - SouJunior</h3>
-                <p>Desenvolvi uma funcionalidade de pesquisa de vagas para usuários logados, personalizando a experiência conforme o perfil do candidato.</p>
+    <section id="services">
+        <h2>Nossos Serviços</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Criação de Landing Pages</h3>
+                <p>Desenvolvemos páginas otimizadas para conversão.</p>
             </div>
-            <div class="project">
-                <h3>PHPTravels - Testes Automatizados</h3>
-                <p>Criação de testes automatizados para o site demo PHPTravels, garantindo a qualidade de seus principais componentes.</p>
+            <div class="service">
+                <h3>Aplicativos Mobile</h3>
+                <p>Apps intuitivos e de alta performance para Android e iOS.</p>
             </div>
-        </section>
+            <div class="service">
+                <h3>Testes Manuais e Automatizados</h3>
+                <p>Garantimos a qualidade dos seus sistemas com testes especializados.</p>
+            </div>
+            <div class="service">
+                <h3>Testes de API</h3>
+                <p>Validamos APIs para máxima confiabilidade e desempenho.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Seção Contato -->
-        <section id="contact">
-            <h2>Contato</h2>
-            <p>Entre em contato para discutir oportunidades ou colaborações!</p>
-            <ul>
-                <li>Email: <a href="mailto:crislaine@example.com">crislaine@example.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/crislaine">linkedin.com/in/crislaine</a></li>
-            </ul>
-        </section>
-    </main>
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>
+            Na Code Tech Labs, nosso foco é oferecer soluções inovadoras e eficientes.
+            Nossa equipe é composta por especialistas em tecnologia comprometidos em
+            entregar projetos que superem as expectativas dos clientes.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Cris Laine. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Code Tech Labs. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
