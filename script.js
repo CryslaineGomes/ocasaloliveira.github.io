@@ -1,7 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const contactButton = document.querySelector(".cta-button");
-    
-    contactButton.addEventListener("click", function() {
-        alert("Entraremos em contato com você em breve!");
-    });
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Obrigado por entrar em contato! Responderemos em breve.');
+    this.reset();
 });
